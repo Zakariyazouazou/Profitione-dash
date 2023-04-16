@@ -1,0 +1,324 @@
+
+  .test{
+    position: fixed;
+    top: 0px;
+    margin-top: 0px;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    float: right;
+    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
+    /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+    background: rgb(0, 0, 0);
+    clip-path: circle(0px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
+    overflow: hidden;
+  }
+
+  .add{
+    clip-path: circle(75%);
+  }
+
+
+
+
+  .circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: relative;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f00;
+    border-radius: 50%;
+  }
+
+
+
+
+
+  .container {
+    width: 200px;
+    height: 100px;
+    background-color: #000000;
+    position: relative;
+  }
+  
+  .word {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    font-size: 20px;
+  }
+
+  
+
+  .word{
+    color: none;
+    text-decoration: none;
+    width:195px;
+    height: 60px;
+    padding: 5px 30px;
+    color: #fff;
+    border-radius: 50px;
+    background: #000;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+  }
+  .word:after{
+    position: absolute;
+    content: "";
+    background: #fff;
+    /* background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0); */
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+    width: 104%;
+    height: 110%;
+    left: -2%;
+    top: -5%; /* if the font is 'Oswald'*/
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index: -1;
+    animation: rotate 1.5s linear infinite;
+    transition: transform 0.3s ease;
+  }
+  .word:hover:after{
+    transform: scaleY(1);
+  }
+  .word:hover{
+    color: #fff;
+  }
+  
+
+
+
+ 
+  
+  .shine-hover-effect:hover .shine {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.5)
+    );
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 50%;
+  }
+  
+  .shine-hover-effect.hover .shine {
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+ 
+  @keyframes rotate {
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  @media screen and (max-width:800px) {
+       .test{
+            width : 85% ; 
+       }
+  }
+
+
+.pointAnimation{
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.AnimationPointDrop{
+      -webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+      animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+  @-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes scale-out-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-out-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+  }
+  
+
+  .hover-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .title {
+    font-size: 1rem;
+    position: absolute;
+    left: -200px;
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .shift-left {
+    transform: translateX(0px);
+  
+  }
+  
+  .shift-right {
+    transform: translateX(180px);
+    opacity: 1;
+    left: 0;
+  }
+
+  @keyframes move-left-to-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes move-right-to-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .moving-text {
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+ .rotation{
+      -webkit-animation: rotate-center 1.5s ease-in-out both;
+      animation: rotate-center 1.5s ease-in-out both;
+ }
+
+  @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+
+  .waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 120px;
+  }
+  .waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .waviy {
+      font-size: 40px;
+    }
+  }
