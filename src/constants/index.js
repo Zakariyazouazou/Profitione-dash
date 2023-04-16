@@ -45,6 +45,7 @@ import {
    campaignmonitor , 
    Hexplanet , 
    Pocimone , 
+   prodash,
    TowerBuild , 
    birdJump , 
    SuperMario , 
@@ -343,6 +344,27 @@ const projects = [
     source_code_link: "https://zakariyazouazou.github.io/albumw/",
   },
   {
+    name: "Profitionnel Dashborad",
+    description:
+      "A comprehensive dashboard-platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Html5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image:prodash,
+    source_code_link: "https://zakariyazouazou.github.io/Profitionnel-dash/",
+  },
+  {
     name: "Hotel",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -363,7 +385,27 @@ const projects = [
     image: Hotel,
     source_code_link: "https://github.com/",
   },
-
+  {
+    name: "berty Market",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Html5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: bertyMarket,
+    source_code_link: "https://zakariyazouazou.github.io/berty_market/",
+  },
 
 
   {
@@ -551,29 +593,6 @@ const projects = [
     source_code_link: "https://zakariyazouazou.github.io/simple_house",
   },
   {
-    name: "berty Market",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Html5",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: bertyMarket,
-    source_code_link: "https://zakariyazouazou.github.io/berty_market/",
-  },
-
-
-  {
     name: "Upright",
     description:
       "profitionel friendly dashborad using react and Tailwind .",
@@ -619,29 +638,6 @@ const projects = [
     image: beautiPortb,
     source_code_link: "https://zakariyazouazou.github.io/first_portfolio/",
   },
-  {
-    name: "diagona",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Html5",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: diagona,
-    source_code_link: "https://zakariyazouazou.github.io/diagoona/",
-  },
-
-
   {
     name: "mail bakery",
     description:

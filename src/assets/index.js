@@ -28,6 +28,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 //personnel import 
 import Dashboard from "./personnel/Dashboard.png"
+import prodash from "./personnel/prodash.png"
 import AlbumMusic from "./personnel/AlbumMusic.png"
 import  Responsivedesign from "./personnel/Responsivedesign.png"
 import  Hotel from "./personnel/Hotel.png"
@@ -146,4 +147,5 @@ export {
    illustrateur ,
    Photoshop , 
    PremierPro , 
+   prodash
 };
